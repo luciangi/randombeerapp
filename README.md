@@ -2,64 +2,52 @@
 
 An application that generates details about a random beer.
 
-## Getting Started
-
-### Prerequisites
-####Run
-
-
+## Checking out the repository
 ```
-Give examples
+git clone https://iluci92@bitbucket.org/iluci92/randombeerapp.git
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+## Running the application
+### Using the .jar file
 ```
-Give the example
+java -jar build/libs/randomBeerApp-1.0-SNAPSHOT.jar
 ```
 
-And repeat
+* The application will then be available at: http://localhost:8080/
+* The API can be viewed using: http://localhost:8080/api
+* To view the H2 data base, browse: http://localhost:8080/h2-console
+* The data base will get initialized with the scripts in: `src/main/resources/data.sql`
 
+### Running the unit/integration tests 
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+gradlew test
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+### Assembling a new .jar file
 
 ```
-Give an example
+gradlew assemble
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+### To run webpack in development mode
+```
+npm install
+npm run devServer
+```
 
 ## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* Gradle
+* NPM
+* Webpack
+* Babel
+* Spring boot: 
+    * Spring Web
+    * Spring Actuators
+    * Spring Data
+    * Spring Data REST
+* H2
+* React
+* Axios
 
 ## Authors
-
 * **Lucian Gabriel Ilie**

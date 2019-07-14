@@ -32,7 +32,7 @@ public class BeerControllerTest {
     public void random_ReturnsNotFoundWhenNoBeersExist() throws Exception {
         // given
         // then
-        mockMvc.perform(get("/beer/random"))
+        mockMvc.perform(get("/api/beer/random"))
                 .andExpect(status().isNotFound());
     }
 
@@ -42,7 +42,7 @@ public class BeerControllerTest {
         Beer beer = new Beer(null, "Guinness Draught", "Stout", 4.2, null);
         beerRepository.save(beer);
         // then
-        mockMvc.perform(get("/beer/random"))
+        mockMvc.perform(get("/api/beer/random"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(beer.getName())))
                 .andExpect(jsonPath("$.description", is(beer.getDescription())))
