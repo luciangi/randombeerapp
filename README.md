@@ -17,6 +17,9 @@ An application that generates details about a random beer.
 * [React](https://reactjs.org/)
 * [Axios](https://github.com/axios/axios)
 
+## Application interface
+![](.README_images/appInterface.png)
+
 ## Checking out the repository
 ```
 git clone https://iluci92@bitbucket.org/iluci92/randombeerapp.git
