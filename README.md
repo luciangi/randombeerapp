@@ -52,4 +52,4 @@ npm run devServer
 ```
 
 ## Authors
-* **Lucian Gabriel Ilie**
+* **[Lucian Gabriel Ilie](mailto:luciangabrielilie@gmail.com)**
