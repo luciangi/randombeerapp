@@ -2,6 +2,9 @@
 
 An application that generates details about a random beer.
 
+## Application interface
+![](.README_images/appInterface.png)
+
 ## Built With
 * [Gradle](https://gradle.org/)
 * [Spring Boot](https://spring.io/projects/spring-boot)
@@ -16,9 +19,6 @@ An application that generates details about a random beer.
 * [H2](https://mvnrepository.com/artifact/com.h2database/h2)
 * [React](https://reactjs.org/)
 * [Axios](https://github.com/axios/axios)
-
-## Application interface
-![](.README_images/appInterface.png)
 
 ## Checking out the repository
 ```
