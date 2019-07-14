@@ -5,7 +5,8 @@
 ### Gradle
 /out/
 /.gradle/
-/build/
+/build/*
+!/build/libs
 
 
 ### Node
